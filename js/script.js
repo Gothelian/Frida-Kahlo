@@ -19,14 +19,21 @@ jQuery(document).ready(function(){
 		});
 	}
 		//Stretchy Navigation --- END
-		//Deplacement Bus
-	$(window).scroll(function() {
-		$('#bus').css('left', (($('html').scrollTop()/$(document).height())*100-25)+"%");
-	});
-		//Deplacement Tramway
-	$(window).scroll(function() {
-		$('#tramway').css('right', (($('html').scrollTop()/$(document).height())*100-50)+"%");
-	});
+	
+	//ANIMATION
+	$('#chat').on('mouseenter', function(){
+		$(this).css('background-image','url(images/animation1.gif)');
+	}).on('mouseleave',function(){
+		$(this).css('background-image','url(images/animation1.png)');
+		});
+
+/*	$('#').on('mouseenter', function(){
+		$(this).css('background-image','url()');
+	}).on('mouseleave',function(){
+		$(this).css('background-image','url()');
+	});*/
+	
+	
 		//Accueil animation
 	$('#page1').hide();
 	$('#portrait').on("click", function(){
@@ -41,11 +48,15 @@ jQuery(document).ready(function(){
 		$('#intro').fadeOut()
 				   .css('max-height','0%');
 		$('#accueil').fadeIn();
-	})
+	});
 		});
 
 
 		//JQUERY END
+
+//ANIMATION
+
+
 
 var angle = 0;
 setInterval(function(){

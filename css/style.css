@@ -5,20 +5,24 @@ body, html {
 	margin: 0;
 	padding: 0;
 	background-color: rgb(250,79,188); 
+	height: 100%;
 }
 body {
 	font-family: 'Abel', sans-serif;
 }
-.texte{
-	position: absolute;
-	width: 100%;
-	height: 400%;
-	top: 5%;	
+
+.texte {
+	background-color: rgb(250,79,188);
+	max-width: 80%;
+	margin: auto;	
 }
 p { 
-	margin: 0 50px;
-	text-align: center;
-	background-color: none;
+	margin: 5%;
+	text-align: justify;
+	background-color: transparent;
+	color: rgb(255,255,255);
+	font-size: 1.25em;
+	
 }
 
 h1 {
@@ -26,13 +30,14 @@ h1 {
 	font-size: 6em;
 	color: white;
 	text-align: center;
+	padding: 30px;
 }
 #title {
 	position: absolute;
 	top: 17%; left: 75%;
 	
 }
-
+	/*EnvironnementPage1*/
 #environnementPage1{
 	background-color: rgb(250,79,188);
 }
@@ -46,6 +51,23 @@ h1 {
 	position: fixed;
 	top: 54%; right: 0%;
 }
+
+.parallax {
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	transition: 0.5s;
+}
+
+#explosion {
+	width: 20%; height: 20%;
+	position: fixed;
+	top: 60%; right: 17%;
+	display: none;		
+}
+
 h2 {
 	margin: 20%;
 	position: absolute;
@@ -78,15 +100,11 @@ h2 {
 #intro p {
 	position: relative;
 	top: 50%;
-	text-align: center;
+	text-align: justify;
 }
 #portrait {
 	display: block;
 	width: 100%;
-}
-
-.texte p {
-	padding : 500px;
 }
 
 		/*Des histoires florales*/
